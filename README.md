@@ -13,7 +13,7 @@ The tool generates:
 * Out-of-scope items
 * An actions register with owners and dependencies
 
-This is my first hands-on AI project as a Business Analyst.
+
 
 ## The problem
 
