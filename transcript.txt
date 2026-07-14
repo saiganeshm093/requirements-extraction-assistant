@@ -1,0 +1,30 @@
+Priya: We need to sort out the spend figures customers are seeing. We’ve had complaints that the amount shown in the app doesn’t always match the actual transaction total. Customers just need to trust the numbers again, so we need something visible as soon as possible.
+
+Dan: We’re still investigating. At the moment, it looks like the spend summary may be updating at a different time from the transaction list. It could be caching, delayed transaction feeds, or the calculation service. We haven’t confirmed which one yet.
+
+Sameera: Before we put anything out, we need to understand the root cause. Displaying incorrect financial information to customers could become a regulatory issue. I don’t support making a cosmetic change that gives the impression the problem has been fixed when it hasn’t.
+
+Priya: I’m not saying we pretend it’s fixed. But we can’t leave customers looking at numbers they think are wrong without saying anything. Could we refresh the page more often or hide the spend total temporarily?
+
+Dan: Hiding it would be a bigger change than it sounds. It’s used in several places, not just the main dashboard. A refresh might help in some cases, but we don’t know whether it would fix the underlying discrepancy.
+
+Sameera: Then we shouldn’t describe it as a fix. We need to identify whether the incorrect figure affects only pending transactions, completed transactions, refunds, or all transaction types. We also need to know how many customers are affected and for how long incorrect figures remain visible.
+
+Marcus: We’ve also had customers saying the Android app crashes when they log in. That’s creating a lot of calls as well, especially after the last release. Can engineering look at that while they’re investigating this?
+
+Priya: That’s separate. Can we keep this meeting focused on the spend discrepancy? Please log the Android issue separately and send the complaint numbers to Dan after the meeting.
+
+Marcus: Okay, but customers don’t see them as separate issues. They just think the app isn’t working.
+
+Dan: For the spend issue, one option is to add a temporary banner saying that some spend totals may take longer to update and customers should check the transaction list for the latest information. We could probably release that within two or three days, assuming the wording and design are approved.
+
+Priya: That sounds reasonable. I’d prefer something sooner, but at least customers would know we’re aware of it.
+
+Sameera: Any customer-facing message must be reviewed and approved by Compliance before release. The wording cannot suggest that the transaction list is definitely accurate unless engineering has confirmed that. We also need to avoid language that minimises the issue.
+
+Dan: Understood. Engineering can provide details on what we know and what we haven’t confirmed. Product can draft the banner.
+
+Priya: Fine. Actions: Dan will investigate the cause and confirm which transaction types are affected. Marcus will provide complaint examples and volumes. I’ll draft the customer message, and Sameera will review it before release.
+
+We’ll aim for the banner in the next two or three days, but that depends on engineering confirming what we can safely say. We still need to decide whether the spend total should remain visible while the investigation is ongoing. We’ll revisit that once Dan has more information.
+
