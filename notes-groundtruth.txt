@@ -1,0 +1,49 @@
+Initial Requirements / Notes
+Customers should be informed that there may be an issue with displayed spend amounts.
+A temporary customer-facing banner should be considered.
+The banner must not state that the issue is resolved.
+Compliance approval is required before any customer-facing wording is released.
+Engineering must identify the root cause before a permanent fix is agreed.
+Engineering should confirm:
+Which customers are affected
+Which transaction types are affected
+How long discrepancies remain visible
+Whether the transaction list can be treated as accurate
+Customer Operations will provide complaint examples and complaint volumes.
+Android login crashes are out of scope for this requirement and should be logged separately.
+Target for the temporary banner is approximately two to three days, subject to investigation and approval.
+It is currently undecided whether the spend total should be hidden, remain visible, or include additional explanatory text.
+## Spend Display Discrepancy – Requirements Notes
+
+Customers are reporting that the spend amount displayed in the app does not always match the total shown in their transaction list.
+
+Product wants something visible to customers quickly so they know the issue is being investigated and can trust the app again.
+
+Engineering is still investigating the root cause. Possible causes include delayed transaction updates, caching, pending transactions, refunds, or an issue with the spend calculation service.
+
+A temporary customer-facing banner should be added while the investigation continues.
+
+The banner should:
+
+* Inform customers that some spend totals may take time to update
+* Confirm that the issue is being investigated
+* Avoid saying that the issue has been fixed
+* Avoid directing customers to the transaction list unless Engineering confirms it is accurate
+* Be approved by Compliance before release
+
+Engineering must investigate and confirm:
+
+* Which customers are affected
+* Which transaction types are affected
+* Whether pending transactions, refunds, or completed transactions are causing the discrepancy
+* How long incorrect amounts remain visible
+* Whether the transaction list displays the correct amount
+* The root cause and permanent fix
+
+Customer Operations will provide complaint examples and complaint volumes.
+
+The Android login crash raised during the meeting is not part of this requirement and should be tracked separately.
+
+The temporary banner is expected within approximately two to three days, subject to Engineering findings and Compliance approval.
+
+It has not yet been decided whether the spend total should remain visible, be temporarily hidden, or display an additional warning beside it.
